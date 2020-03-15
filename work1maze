@@ -13,8 +13,9 @@ public class mg {
         step = n * n;
         maze = new int[n][n];
         long time1=System.currentTimeMillis();
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
+        int i;int j;
+        for (i = 0; i < n; i++) {
+            for (j = 0; j < n; j++) {
                 maze[i][j] = sc.nextInt();
                 //起始点为（1，1），初始步长为0
                 recursion(1, 1, 0);
